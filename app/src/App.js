@@ -14,9 +14,9 @@ import "./App.css";
 
 const App = () => (
   <div className="app">
-    <div className="navbar">
+    {/* <div className="navbar">
       <Navbar />
-    </div>
+    </div> */}
     <div className="main">
       <Layout>
         <div className="routes">
