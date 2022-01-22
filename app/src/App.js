@@ -5,6 +5,7 @@ import { Layout, Typography, Space } from "antd";
 import {
   Exchanges,
   Homepage,
+  News,
   Cryptocurrencies,
   CryptoDetails,
   Navbar,
@@ -16,8 +17,17 @@ const App = () => (
     {/* <div className="navbar">
       <Navbar />
     </div> */}
+
     <div className="main">
       <Layout>
+        <div className="header">
+          <Typography.Title
+            level={10}
+            style={{ color: "white", textAlign: "center" }}
+          >
+            <Link to="/">CRYPTO WORLD </Link>
+          </Typography.Title>
+        </div>
         <div className="routes">
           <Switch>
             <Route exact path="/">
@@ -32,6 +42,9 @@ const App = () => (
             <Route exact path="/crypto/:coinId">
               <CryptoDetails />
             </Route>
+            <Route exact path="/news">
+              <News />
+            </Route>
           </Switch>
         </div>
       </Layout>
@@ -40,8 +53,8 @@ const App = () => (
           level={5}
           style={{ color: "white", textAlign: "center" }}
         >
-          Copyright © 2021
-          <Link to="/">Crypto-World Inc.</Link> <br />
+          Copyright © 2022 <br />
+          <Link to="/">CRYPTO-WORLD Inc.</Link> <br />
           All Rights Reserved.
         </Typography.Title>
       </div>
